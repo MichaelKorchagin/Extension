@@ -1,0 +1,77 @@
+html,
+body {
+    font-family: 'Merriweather', serif;
+
+    margin: 0;
+    padding: 0;
+    min-height: 128px;
+    min-width: 380px;
+}
+
+/* Modal header */
+.modal-header {
+    background: #dadada;
+    align-items: center;
+    border: 3px #000000;
+}
+
+
+/* logo */
+h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 400;
+}
+.current-text {
+    margin-bottom: 20px;
+}
+
+.logo {
+    padding-top: 6px;
+    padding-left: 12px;
+}
+.modal-descrp {
+    padding-left: 12px;
+}
+.modal-descrp p {
+    margin: 4px;
+    padding-bottom: 8px;
+    font-size: 14px;
+}
+
+.logo-img {
+    width: 30px;
+}
+
+.modal-icons {
+    height: 50px;
+    width: 100%;
+
+    padding-top: 20px;
+}
+
+/* Modal icons */
+a:link,
+a:visited {
+    color: #000000;
+    outline: 0;
+    text-decoration: none;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-box {
+    margin-left: 24px;
+    width: 60px;
+    text-align: center;
+}
+.flex-box img {
+    width: 40px;
+}
+.flex-box i {
+    font-style: normal;
+    font-size: 8px;
+}
+
