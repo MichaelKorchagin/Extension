@@ -1,22 +1,29 @@
+// const buttonSave = document.getElementById("button-to-open-saver");
+//
+// chrome.runtime.sendMessage('blah blah', (response) => {
+//     console.log('response started');
+//     console.log(`1st: ${response}`);
+// });
 
-const buttonSave = document.getElementById("button-to-open-saver");
-buttonSave.addEventListener("click", async () => {
-  // chrome.runtime.sendMessage('blah blah', (response) => {
-  //   console.log('resp');
-  //   console.log(`1st: ${response}`);
-  // });
 
-  chrome.tabs.query({
-    currentWindow: true,
-    active: true,
-  },
-    (tabs) => {
-      const active = tabs[0];
-      alert(active.title);
+// buttonSave.addEventListener("click", async () => {
+//
+//     chrome.tabs.query({
+//             currentWindow: true,
+//             active: true
+//         },
+//         (tabs) => {
+//             const active = tabs[0];
+//             alert(active.id);
+//         }
+//     );
+// });
 
-      // const elementsArr = [...document.getElementsByTagName('img')].map(i=>i.src);
-      //
-      // console.log(elementsArr);
-    }
-  );
-});
+// chrome.scripting.executeScript({
+//     target: {tabId: tab.id},
+//     func: getElements
+// });
+// const getElements = () => {
+//     const elementsArr = [...document.getElementsByTagName('img')].map(i => i.src);
+//     console.log(elementsArr);
+// }
