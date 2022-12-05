@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Test Extension",
-  "description": "Tezd",
+  "name": "Image Saver",
+  "description": "Save images from website",
   "version": "0.1",
   "icons": {
     "16": "images/icon-16.png",
@@ -25,7 +25,7 @@
       "48": "images/icon-48.png",
       "128": "images/icon-128.png"
     },
-    "default_title": "TeZD",
+    "default_title": "Save IMG from website",
     "default_popup": "popup.html"
   },
   "commands": {

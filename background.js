@@ -17,6 +17,7 @@
 //   }
 // );
 
+
 async function getCurrentTab() {
     let queryOptions = {
         active: true,

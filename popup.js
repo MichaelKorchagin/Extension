@@ -6,6 +6,25 @@
 // });
 
 
+
+chrome.storage.local.get(["curImg"]).then((result) => {
+    console.log("POPUP CONTEXT: ");
+    console.log(result.curImg);
+
+    const docFragment = new DocumentFragment();
+    for (let i = 0; i < result.curImg[0].length; i++) {
+        let innerImg = result.curImg[0][i];
+
+        let newDiv = document.createElement("img");
+        console.log(newDiv);
+
+        newDiv.className = "imagesPreview";
+        newDiv.setAttribute("src", innerImg);
+        docFragment.append(newDiv);
+    }
+    document.getElementById("preview-images").append(docFragment);
+});
+
 // buttonSave.addEventListener("click", async () => {
 //
 //     chrome.tabs.query({
